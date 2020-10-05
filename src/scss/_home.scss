@@ -1,0 +1,285 @@
+@import "./variables";
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $main-font;
+
+  .main-home {
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .name {
+      border-top: 3px solid white;
+      border-bottom: 2px solid white;
+      color: white;
+      margin-top: 80px;
+      font-size: 50px;
+      height: 80px;
+      width: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bolder;
+      letter-spacing: 3px;
+    }
+
+    .title {
+      color: white;
+      font-size: 27px;
+      font-weight: lighter;
+      letter-spacing: 2px;
+    }
+
+    .fa-laptop-code {
+      color: white;
+      font-size: 100px;
+    }
+
+    .tech {
+      color: white;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .link-btns {
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: 12px 70px;
+        border-radius: 3px;
+        border: none;
+        background-color: $linen;
+        color: $black-coral-3;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        cursor: pointer;
+        margin: 5px;
+
+        &:hover {
+          background-color: darken($color: rgb(247, 235, 227), $amount: 8);
+        }
+      }
+    }
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 650px;
+    padding: 10px 0;
+    margin: 30px 0 0 0;
+    background-color: $black-coral-3;
+    font-family: $main-font;
+
+    h3{
+        color: white;
+        font-size: 30px;
+        border-bottom: 2px solid $lavender-gray;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 60vw;
+        text-align: center;
+        line-height: 40px;
+        font-family: $main-font;
+    }
+
+    p{
+        width: 90vw;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-family: $main-font;
+    }
+
+    .technology {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 180px auto 10px;
+      width: 90vw;
+      font-family: $main-font;
+
+      i {
+        font-size: 90px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 150px;
+        margin: 0 69px;
+
+        span {
+          font-size: 20px;
+          margin-top: 20px;
+          font-family: $main-font;
+        }
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $main-font;
+        justify-content: flex-end;
+        font-size: 20px;
+        color: white;
+        
+
+        img {
+          height: 100px;
+          width: auto;
+          margin-bottom: 20px;
+        }
+
+        .redux-image {
+          height: 80px;
+          margin-bottom: 30px;
+        }
+
+        .express-img{
+            height: 30px;
+            margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .projects-main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2{
+          height: 180px;
+          width: 100vw;
+          background-color: darken($color: rgb(83, 99, 120), $amount: 20);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: $main-font;
+          font-weight: bolder;
+          font-size: 30px;
+      }
+
+      .memory-body, .yy-body{
+          height: 400px;
+          width: 100vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        //   justify-content: center;
+          padding-left: 50px;
+          background-color: darken($color: rgb(83, 99, 120), $amount: 15);
+
+          .memory-info, .yy-info {
+              color: white;
+              font-family: $main-font;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              align-items: center;
+              height: 80%;
+              width: 60%;
+
+              h3{
+                  font-size: 35px;
+              }
+
+              p{
+                  font-size: 20px;
+                  width: 70%;
+              }
+
+              a{
+                  color: white;
+                  text-decoration: none;
+                  cursor: pointer;
+                  font-size: 20px;
+
+                  span{
+                      font-family: $main-font;
+                      margin-left: 6px;
+                  }
+              }
+          }
+
+          img{
+              height: 400px;
+              width: auto;
+              position: absolute;
+              right: 0;
+          }
+      }
+
+      .budget-body{
+          height: 400px;
+          width: 100vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        //   justify-content: center;
+          padding-left: 50px;
+          background-color: darken($color: rgb(83, 99, 120), $amount: 10);
+
+          .budget-info {
+              color: white;
+              font-family: $main-font;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              align-items: center;
+              height: 80%;
+              width: 60%;
+            //   position: relative;
+            margin-left: 38%;
+
+              h3{
+                  font-size: 35px;
+              }
+
+              p{
+                  font-size: 20px;
+                  width: 70%;
+              }
+
+              a{
+                  color: white;
+                  text-decoration: none;
+                  cursor: pointer;
+                  font-size: 20px;
+
+                  span{
+                      font-family: $main-font;
+                      margin-left: 6px;
+                  }
+              }
+          }
+
+          img{
+              height: 400px;
+              width: auto;
+              position: absolute;
+              left: 0;
+          }
+      }
+
+      .yy-body{
+          background-color: darken($color: rgb(83, 99, 120), $amount: 5);
+      }
+  }
+}
