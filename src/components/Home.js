@@ -10,12 +10,6 @@ const Home = () => {
         <div className="tech">
           JAVASCRIPT || REACT || NODE || HTML/CSS || SQL
         </div>
-        <div className="link-btns">
-          <button>INTRO</button>
-          <button>PROJECTS</button>
-          <button>ABOUT</button>
-          <button>CONTACT</button>
-        </div>
       </div>
       <div className="about-me">
         <h3>

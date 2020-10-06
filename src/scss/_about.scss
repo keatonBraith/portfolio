@@ -1,0 +1,100 @@
+@import "./variables";
+
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .about-body {
+    width: 95vw;
+    height: 850px;
+    background-color: $light-steel-blue;
+    border-radius: 3px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about-me{
+        width: 90%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $main-font;
+        background-color: darken($color: rgb(158, 181, 215), $amount: 3);
+        padding: 10px;
+
+        h1{
+            color: white;
+            border-bottom: 2px darken($color: rgb(158, 181, 215), $amount: 15) solid;
+            padding-bottom: 20px;
+            font-weight: 900;
+        }
+
+        p{
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .experience{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 10px;
+        font-family: $main-font;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                color: white;
+                margin-bottom: 10px;
+
+                span{
+                    font-family: $main-font;
+                    margin-left: 10px;
+                }
+            }
+
+            p{
+                color: white;
+                width: 80%;
+                font-size: 20px;
+            }
+        }
+
+        .devmtn{
+            background-color: darken($color: rgb(158, 181, 215), $amount: 7);
+        }
+        .premier{
+            background-color: darken($color: rgb(158, 181, 215), $amount: 9);
+        }
+        .franz{
+            background-color: darken($color: rgb(158, 181, 215), $amount: 11);
+        }
+        .crane{
+            background-color: darken($color: rgb(158, 181, 215), $amount: 13);
+        }
+    }
+  }
+}

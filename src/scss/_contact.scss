@@ -1,0 +1,78 @@
+@import "./variables";
+
+.contact-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .contact-main {
+    width: 95vw;
+    height: auto;
+    background-color: $glaucous;
+    border-radius: 3px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+
+    h1 {
+      color: white;
+      border-bottom: white solid 2px;
+      border-top: white solid 3px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      width: 500px;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      height: 100px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 50px;
+        margin-left: 50px;
+      }
+    }
+
+    .email {
+      background-color: darken($color: rgb(113, 132, 183), $amount: 3);
+    }
+    .linkedin {
+      background-color: darken($color: rgb(113, 132, 183), $amount: 6);
+    }
+    .facebook {
+      background-color: darken($color: rgb(113, 132, 183), $amount: 9);
+    }
+    .twitter {
+      background-color: darken($color: rgb(113, 132, 183), $amount: 12);
+    }
+    .github {
+      background-color: darken($color: rgb(113, 132, 183), $amount: 15);
+      border-radius: 0 0 3px 3px;
+    }
+  }
+}
